@@ -2,7 +2,6 @@ let hamburger = document.querySelector(".hamburger");
 let listGroup = document.querySelector(".list-group");
 let subscribeBtn = document.querySelector("#subscribe");
 let subscribed = document.querySelector(".modal");
-// let closeBtn = document.querySelector("#close");
 
 hamburger.addEventListener("click", mobileView);
 subscribeBtn.addEventListener("click", subscribe);
@@ -18,12 +17,35 @@ function subscribe(e) {
   setTimeout(() => {
     subscribeBtn.style.visibility = "hidden";
     subscribed.style.display = "none";
+    window.location.reload();
   }, 3000);
-  window.location.reload();
 }
-// function unsubscribe(e) {
-//     e.preventDefault()
-//     subscribed.style.visibility='hidden'
-//     subscribeBtn.style.visibility='visible'
 
+// function countdown() {
+//   const today = new Date();
+//   var offerDate = new Date("03 jul 2022");
+//   //If offer ends reset to new value
+//   if (today.getSeconds() == offerDate.getSeconds()) {
+//     offerDate = resetOfferDate();
+//   }
+//   //offerTime will have the total millseconds
+//   const offerTime = offerDate - today;
+//   // 1 sec= 1000 ms
+//   // 1 min = 60 sec
+//   // 1 hour = 60 mins
+//   // 1 day = 24 hours
+//   const offerDays = Math.floor(offerTime / (1000 * 60 * 60 * 24));
+//   const offerHours = Math.floor((offerTime / (1000 * 60 * 60)) % 24);
+//   const offerMins = Math.floor((offerTime / (1000 * 60)) % 60);
+//   const offerSecs = Math.floor((offerTime / 1000) % 60);
+//   document.querySelector(".one").innerText = offerDays;
+//   document.querySelector(".two").innerHTML = offerHours;
+//   document.querySelector(".three").innerHTML = offerMins;
+//   document.querySelector(".four").innerHTML = offerSecs;
 // }
+// function resetOfferDate() {
+//   const futureDate = new Date();
+//   futureDate.setDate(futureDate.getDate() + 15);
+//   return futureDate;
+// }
+// setInterval(countdown, 1000);

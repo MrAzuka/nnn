@@ -66,6 +66,9 @@
 .nav-links:hover {
   color: var(--secondary-color);
 }
+.active-page {
+  color: var(--secondary-color);
+}
 .hero-section {
   width: 100vw;
   height: 768px;
@@ -252,9 +255,9 @@
   font: normal normal 600 24px/33px var(--font-style-1);
   margin-bottom: 30px;
 }
-.black{
-    color: #fff;
-    background-color: #302f2f;
+.black {
+  color: #fff;
+  background-color: #302f2f;
 }
 @media screen and (max-width: 1140px) {
   .nav-links {
@@ -286,7 +289,6 @@
     width: 100vw;
     height: 100vh;
     transition: 0.3s;
-
   }
   .list-group li {
     padding: 20px;
@@ -294,14 +296,13 @@
   .nav-links {
     color: #fff;
     font-size: 20px;
-    
   }
   .active {
     left: 0;
   }
 
-  .active-page{
-      color: white
+  .active-page {
+    color: white;
   }
   .nav-item {
     margin: 2.5rem 0;
@@ -394,9 +395,7 @@
     margin-top: 3rem;
     margin-bottom: 4rem;
   }
-  .active-page{
-      color: var(--secondary-color);
-  }
+
   .subscribe h3 {
     margin-bottom: 2rem;
   }
@@ -406,9 +405,9 @@
     font: normal normal 500 22px/30px var(--font-style-1);
     margin-bottom: 3rem;
   }
-  form{
-      width: 100vw;
-      margin-top:-1rem;
+  form {
+    width: 100vw;
+    margin-top: -1rem;
   }
   .subscribe form .email-box {
     width: 80%;
@@ -438,11 +437,18 @@
   }
   .footer-div ul li {
     font: normal normal 500 20px/30px var(--font-style-1);
-
   }
   .footer-div p {
     text-align: center;
     font: normal normal 600 20px/30px var(--font-style-1);
     margin-bottom: 30px;
+  }
+  .location{
+    font: normal normal 500 19px/28px var(--font-style-1);
+
+  }
+  .main svg{
+    width: 60px;
+    height: 50px;
   }
 }
