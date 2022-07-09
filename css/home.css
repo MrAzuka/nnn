@@ -230,6 +230,10 @@
   text-align: center;
   font: normal normal bold 40px/55px var(--font-style-1);
 }
+.footer-text {
+  margin-top: 10px;
+  text-decoration: underline;
+}
 .footer-div {
   background-color: var(--secondary-color);
   color: #fff;
@@ -443,11 +447,10 @@
     font: normal normal 600 20px/30px var(--font-style-1);
     margin-bottom: 30px;
   }
-  .location{
+  .location {
     font: normal normal 500 19px/28px var(--font-style-1);
-
   }
-  .main svg{
+  .main svg {
     width: 60px;
     height: 50px;
   }
