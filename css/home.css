@@ -16,9 +16,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-   
 }
-
 
 .logo {
     padding-left: 20px;
@@ -313,6 +311,9 @@
 }
 
 @media only screen and (max-width: 850px) {
+    .logo img {
+        width: 70%;
+    }
     .nav-container {
         position: sticky;
     }
