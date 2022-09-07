@@ -1,54 +1,86 @@
 .donation {
-  padding: 2rem 3rem;
-  width: 100vw;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 5rem 0;
-}
-.donation-text {
-  width: 50%;
-}
-.donation img {
-  margin-left: -2rem;
-}
-.donation-text p {
-  width: 80%;
-  text-align: left;
-  font: normal normal 600 25px/34px var(--font-style-1);
-  margin-bottom: 4rem;
-}
-.underline {
-  width: 300px;
-  margin-bottom: 2rem;
-}
-@media only screen and (max-width: 850px) {
-  .donation {
     padding: 2rem 3rem;
     width: 100vw;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     margin: 5rem 0;
-  }
-  .new{
-      text-align: center;
-  }
-  .donation-text {
-    width: 100%;
-    margin-bottom: 3rem;
-  }
-
-  .donation-text p {
-    width: 100%;
+}
+.donation-text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.head {
     text-align: center;
-    font: normal normal 600 20px/30px var(--font-style-1);
+}
+.donation-text .head,
+.underline,
+.donation-text p,
+.btn {
+    align-self: flex-start;
+}
+.donation-text2 .head2,
+.underline2,
+.donation-text2 p,
+.btn2 {
+    align-self: flex-end;
+}
+
+.donation img {
+    margin-left: -2rem;
+}
+.donation-text p {
+    width: 80%;
+    text-align: left;
+    font: normal normal 600 25px/34px var(--font-style-1);
     margin-bottom: 4rem;
-  }
-  .underline {
-    width: 200px;
-    margin: auto;
+}
+.donation-text2 p {
+    text-align: right;
+}
+.underline {
+    width: 300px;
     margin-bottom: 2rem;
-  }
+}
+.underline2 {
+    width: 100px;
+}
+@media only screen and (max-width: 850px) {
+    .donation {
+        padding: 2rem 3rem;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 5rem 0;
+    }
+    .new {
+        text-align: center;
+    }
+    .donation-text {
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+    .donation-text .head,
+    .btn {
+        align-self: center;
+    }
+    .donation-text p {
+        width: 100%;
+        text-align: center;
+        font: normal normal 600 20px/30px var(--font-style-1);
+        margin-bottom: 4rem;
+    }
+    .donation2 {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .underline {
+        width: 200px;
+        margin: auto;
+        margin-bottom: 2rem;
+    }
 }

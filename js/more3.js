@@ -1,9 +1,9 @@
 function countdown() {
     const today = new Date();
-    var offerDate = new Date("21 jul 2022");
+    var offerDate = new Date("21 nov 2022");
     //If offer ends reset to new value
     if (today.getDate() == offerDate.getDate()) {
-      offerDate = resetOfferDate();
+        offerDate = resetOfferDate();
     }
     //offerTime will have the total millseconds
     const offerTime = offerDate - today;
@@ -19,11 +19,10 @@ function countdown() {
     document.querySelector(".two").innerHTML = offerHours;
     document.querySelector(".three").innerHTML = offerMins;
     document.querySelector(".four").innerHTML = offerSecs;
-  }
-  function resetOfferDate() {
+}
+function resetOfferDate() {
     const futureDate = new Date();
     futureDate.setDate(futureDate.getDate());
     return futureDate;
-  }
-  setInterval(countdown, 1000);
-  
+}
+setInterval(countdown, 1000);

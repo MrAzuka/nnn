@@ -1,69 +1,86 @@
 .about-1 p {
-  font: normal normal 500 26px/34px var(--font-style-1);
+    font: normal normal 500 26px/34px var(--font-style-1);
 }
 .about-1 {
-  width: 50%;
-  padding: 4rem;
-  margin-left: 5rem;
-  margin-top: 2rem;
+    width: 50%;
+    padding: 4rem;
+    margin-left: 5rem;
+    margin-top: 2rem;
 }
 
 .about-4 {
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-}
-.image-div {
-  width: 100vw;
-  overflow-x: scroll;
-  display: inline-flex;
-  margin-top: 3rem;
-  margin-bottom: 2rem;
-}
-.card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-left: 2rem;
-  margin-right: 3rem;
-}
-.card img {
-  object-fit: fill;
-  width: 400px;
-  height: 500px;
-  border-radius: 50%;
-  margin-bottom: 2rem;
-}
-.card-title {
-  font: normal normal bold 25px/27px Open Sans;
-  text-align: center;
-}
-.card-subtitle {
-  font: normal normal 600 20px/27px Open Sans;
-  color: var(--secondary-color);
-  text-align: center;
-}
-@media only screen and (max-width: 850px) {
-  .about-1 {
-    padding: 0.5rem;
-    margin: 0;
     width: 100vw;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
-    height: auto;
-    margin-bottom: 7rem;
-    margin-top: 4rem;
-  }
-  .about-1 p {
+}
+.historyImg {
+    width: 452px;
+    height: 396px;
+}
+.image-div {
+    width: 90%;
+    overflow-x: scroll;
+    display: flex;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+    margin-right: 3rem;
+}
+.card img {
+    width: 308px;
+    height: 308px;
+    border-radius: 154px;
+    margin-bottom: 2rem;
+}
+.card-title {
+    font: normal normal bold 25px/27px Open Sans;
     text-align: center;
-    width: 100%;
-    font: normal normal 500 22px/29px var(--font-style-1);
-  }
-  .card{
-    margin-left: 0.5rem;
-  }
+}
+.card-subtitle {
+    font: normal normal 600 20px/27px Open Sans;
+    color: var(--secondary-color);
+    text-align: center;
+}
+@media only screen and (max-width: 850px) {
+    .historyImg {
+        width: 352px;
+        height: 296px;
+    }
+    .about-1 {
+        padding: 0.5rem;
+        margin: 0;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        margin-bottom: 5rem;
+        margin-top: 2 rem;
+    }
+    .about-1 p {
+        text-align: center;
+        width: 100%;
+        font: normal normal 500 22px/29px var(--font-style-1);
+    }
+    .card {
+        margin-left: 0.5rem;
+    }
+    .group {
+        margin-bottom: none;
+        margin-top: none;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .sec-1 {
+        padding: 0;
+    }
+    .one {
+        width: 90%;
+    }
 }
