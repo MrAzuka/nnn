@@ -19,6 +19,21 @@
     width: 452px;
     height: 396px;
 }
+.his-2 {
+    width: 100%;
+    font: normal normal 500 28px/34px var(--font-style-1);
+    padding-left: 10rem;
+    padding-right: 2rem;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.group {
+    margin-bottom: 0px;
+    padding: 0 10rem;
+}
+.one {
+    margin-bottom: 0rem;
+}
 .image-div {
     width: 90%;
     overflow-x: scroll;
@@ -69,9 +84,15 @@
     .sec-2 {
         margin-bottom: 20px;
     }
+    .his-2 {
+        font: normal normal 500 17px/24px var(--font-style-1);
+        text-align: center;
+        padding: 0px 20px;
+        margin-top: 30px;
+    }
     .one {
         width: 90%;
-        margin-bottom: 30px;
+        margin-bottom: 40px;
     }
     .card img {
         width: 208px;
