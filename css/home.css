@@ -284,8 +284,11 @@
 .merch img:hover {
     transform: scale(1.2);
 }
-.sub-head {
+/* .sub-head {
     border-bottom: none;
+} */
+hr {
+    background-color: #000029;
 }
 .icons-footer {
     display: flex;
@@ -315,11 +318,6 @@
     .hero-section {
         margin-bottom: 30px;
     }
-    .sec-1,
-    .group2,
-    .sec-2 {
-        height: auto;
-    }
 }
 
 @media only screen and (max-width: 850px) {
@@ -332,7 +330,7 @@
     .list-group {
         position: absolute;
         left: -120%;
-        top: 103px;
+        top: 76.9px;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -384,6 +382,7 @@
         background-size: cover;
     }
     .group {
+        padding: 0;
         flex-direction: column;
         align-items: center;
         height: fit-content;
@@ -391,40 +390,47 @@
         width: 100%;
     }
     .group .first {
-        margin-bottom: 10px;
+        margin: 1rem 0rem;
         align-items: center;
     }
 
+    .first {
+        margin: 1rem 0rem;
+        align-items: center;
+    }
     .first p {
-        font: normal normal 600 20px/30px var(--font-style-1);
+        font: normal normal 500 17px/24px var(--font-style-1);
         width: 100%;
     }
+
+    .subscribe {
+        padding: 0px 20px;
+    }
     .sec-1 .first p {
-        font: normal normal 600 20px/30px var(--font-style-1);
+        font: normal normal 500 17px/24px var(--font-style-1);
         width: 90vw;
         text-align: center;
     }
     .head {
-        font: normal normal bold 34px/38px var(--font-style-2);
+        font: normal normal bold 25px/30px var(--font-style-2);
         letter-spacing: 0px;
         word-spacing: 0px;
     }
-    .underline {
-        width: 100px;
-        height: 5px;
-    }
+
     .one {
         width: 90vw;
+        padding: 0px 20px;
     }
     .sec-2 {
-        margin-bottom: 1rem;
+        margin-bottom: 0;
     }
     .sec-2 .first p {
-        font: normal normal 600 20px/30px var(--font-style-1);
+        font: normal normal 500 17px/24px var(--font-style-1);
         width: 100vw;
         text-align: center;
     }
     .group2 {
+        padding: 0;
         width: calc(100%-80px);
         flex-direction: column-reverse;
         height: auto;
@@ -440,20 +446,21 @@
         justify-content: space-around;
         width: 100%;
         align-items: center;
-        font: normal normal bold 20px/30px var(--font-style-2);
+        font: normal normal bold 17px/24px var(--font-style-2);
         margin-top: 4rem;
         margin-bottom: 30px;
     }
     .sec-3 p {
-        font: normal normal 600 20px/30px var(--font-style-1);
+        font: normal normal 500 17px/24px var(--font-style-1);
         width: 100%;
         text-align: center;
         margin-bottom: 4rem;
         padding: 0 10px;
     }
-    .sec-3 .head3 {
+    .sec-3 {
         text-align: center;
         border: none;
+        margin-bottom: 30px;
     }
     .merch {
         display: flex;
@@ -486,22 +493,14 @@
     .subscribe p {
         width: 100%;
         text-align: center;
-        font: normal normal 600 22px/30px var(--font-style-1);
+        font: normal normal 500 17px/24px var(--font-style-1);
         margin-bottom: 3rem;
     }
     form {
         width: 100vw;
         margin-top: -1rem;
     }
-    .subscribe form .email-box {
-        width: 80%;
-        font: normal normal 600 25px/34px var(--font-style-1);
-        color: #000029;
-    }
-    .subscribe form .email-box::placeholder {
-        font: normal normal 600 20px/30px var(--font-style-1);
-        color: #707070;
-    }
+
     .btn {
         width: 200px;
         height: 74px;

@@ -49,13 +49,13 @@
 }
 @media only screen and (max-width: 850px) {
     .donation {
-        padding: 2rem 3rem;
         width: 100vw;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin: 5rem 0;
+        margin: 5rem 0rem;
+        padding: 0;
     }
     .new {
         text-align: center;
@@ -63,6 +63,7 @@
     .donation-text {
         width: 100%;
         margin-bottom: 3rem;
+        padding: 0px 20px;
     }
     .donation-text .head,
     .btn {
@@ -71,16 +72,14 @@
     .donation-text p {
         width: 100%;
         text-align: center;
-        font: normal normal 600 20px/30px var(--font-style-1);
+        font: normal normal 500 17px/24px var(--font-style-1);
         margin-bottom: 4rem;
     }
     .donation2 {
         flex-direction: column-reverse;
         align-items: center;
     }
-    .underline {
-        width: 200px;
-        margin: auto;
-        margin-bottom: 2rem;
+    .donation img {
+        margin-left: 0rem;
     }
 }
