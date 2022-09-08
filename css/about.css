@@ -83,4 +83,18 @@
     .one {
         width: 90%;
     }
+    .card img {
+        width: 208px;
+        height: 208px;
+        border-radius: 104px;
+    }
+    .card-title {
+        font: normal normal bold 18px/24px Open Sans;
+        text-align: center;
+    }
+    .card-subtitle {
+        font: normal normal 600 15px/20px Open Sans;
+        color: var(--secondary-color);
+        text-align: center;
+    }
 }
